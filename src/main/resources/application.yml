@@ -1,0 +1,14 @@
+myCustomVar:
+    n1: 2
+    n2: 8
+logging:
+    level:
+        com:
+            develhope:
+                servizilogging:
+                    services: DEBUG
+        root: INFO
+spring:
+    output:
+        ansi:
+            enabled: ALWAYS

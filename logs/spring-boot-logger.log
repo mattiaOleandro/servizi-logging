@@ -1,0 +1,85 @@
+2022-09-21 17:28:00,035 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ServiziLoggingApplication using Java 17.0.2 on CompName with PID 15376 (C:\Users\matti\Desktop\Develhope2\servizi-logging\target\classes started by Cataclysma666 in C:\Users\matti\Desktop\Develhope2\servizi-logging)
+2022-09-21 17:28:00,039 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-09-21 17:28:00,040 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-09-21 17:28:00,138 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-21 17:28:00,138 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-21 17:28:02,142 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-09-21 17:28:02,163 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-21 17:28:02,164 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-09-21 17:28:02,164 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-21 17:28:02,267 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-09-21 17:28:02,268 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2130 ms
+2022-09-21 17:28:02,835 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-09-21 17:28:02,856 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-21 17:28:02,891 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-21 17:28:02,906 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ServiziLoggingApplication in 3.869 seconds (JVM running for 4.867)
+2022-09-21 17:28:13,486 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-21 17:28:13,487 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-21 17:28:13,488 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-09-21 17:28:13,524 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-1] Starting BasicController on mapped (/)
+2022-09-21 17:28:13,524 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-1] Welcome in logger!
+2022-09-21 17:28:13,529 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-1] Ending BasicController on mapped (/)
+2022-09-21 17:28:27,123 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-2] Starting BasicController on mapped (/exp)
+2022-09-21 17:28:27,124 INFO com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Start of EXP calculation
+2022-09-21 17:28:27,128 INFO com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] myCustomVar1: 2 & myCustomVar2: 8
+2022-09-21 17:28:27,129 DEBUG com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Calculating exponent for the environment variable myCustomVar1
+2022-09-21 17:28:27,130 DEBUG com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Exponent calculated and assigned to the variable exp1
+2022-09-21 17:28:27,130 DEBUG com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Calculating exponent for the environment variable myCustomVar2
+2022-09-21 17:28:27,130 DEBUG com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Exponent calculated and assigned to the variable exp2
+2022-09-21 17:28:27,137 INFO com.develhope.servizilogging.services.BasicService [http-nio-8080-exec-2] Ending of EXP calculation
+2022-09-21 17:28:27,138 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-2] Ending BasicController on mapped (/exp)
+2022-09-21 17:28:46,576 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-3] Starting BasicController on mapped (/get-errors)
+2022-09-21 17:28:46,579 ERROR com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-3] This is the ERROR logging
+java.lang.Error: This is the Error
+	at com.develhope.servizilogging.controllers.BasicController.getErrors(BasicController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-21 17:28:46,580 INFO com.develhope.servizilogging.controllers.BasicController [http-nio-8080-exec-3] Ending BasicController on mapped (/get-errors)
